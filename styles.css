@@ -1,0 +1,636 @@
+*{
+    margin:0px auto;
+    padding: 0px auto;
+	font-family: 'Lato', sans-serif; 	
+}
+/* ESTYLE HOME*/
+.content--canvas{
+	background:  #212F3C;
+    height:100vh;
+}
+.content_title{
+	font-family: 'Roboto', sans-serif;    
+	position: absolute;
+	top: 50%;
+	left: 0;
+    width: 100%;    
+	text-align: center;
+	margin: -5.5vw 0 0 0;
+	z-index: 100;	
+}
+
+.content_title h2{
+	font-size: 42px;
+	color: white;
+	line-height: 1;
+	border-spacing: 40px;
+}
+.nav-wrapper {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items:flex-end;
+	position: fixed;
+	z-index:-10000;
+	padding:0px 100px;
+}	
+
+#btnabout{
+	width: 190px;
+    height: 45px;
+    margin: 30px 100px;
+    background: transparent;
+    border: 1px solid white ;      
+	font-size: 18px; 	
+    cursor: pointer;
+}
+
+
+#btnabout a {
+	color:white;
+}
+
+#btnabout:hover{
+    background: #EE6E73;
+    border: 2px solid #EE6E73; 
+	font-weight: bold;  
+}
+
+#about, #projects,#skills, #contact{
+	padding: 60px 100px;		
+	width: 100%;		
+}
+
+ #projects h3, #about h3, #skills h3 {
+	padding-bottom:40px;
+	text-align: center;
+	color:#212F3C;
+	font-weight: bold;
+}
+/*STYLE STARS*/
+.star{
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+}
+.one{
+    top: 15%;
+    left: 30%;
+}
+.two{
+    top: 25%;
+    left: 50%;
+}
+.three{
+    top: 65%;
+    left: 80%;
+}
+.four{
+    top: 80%;
+    left: 20%;
+}
+.five{
+    top: 60%;
+    left: 5%;
+}
+.six{
+    top: 35%;
+    left: 90%;
+}
+.seven{
+    top: 75%;
+    left: 35%;
+}
+.eight{
+    top: 85%;
+    left: 60%;
+}
+.nine{
+    top: 15%;
+    left: 80%;
+}
+.ten{
+    top: 25%;
+    left: 10%;
+}
+
+/*ANIMATION STARS*/
+.star:nth-child(2n){
+-webkit-animation:star-par 2s infinite;
+}
+@keyframes star-par{
+    0%,85%{
+        box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+    }
+    100%{
+        box-shadow: 0 0 12px 12px rgba(255,255,255,.3);  
+    }
+}
+.star:nth-child(2n){
+    -moz-animation:star-par 2s infinite;
+    }
+
+@keyframes star-par{
+    0%,85%{
+        box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+    }
+    100%{
+        box-shadow: 0 0 12px 12px rgba(255,255,255,.3);  
+    }
+}
+.star:nth-child(2n+1){
+    -webkit-animation:star-impar 2s infinite;
+    }
+    @keyframes star-impar{
+      0%,35%,50%{
+        box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+      }
+      45%{
+        box-shadow: 0 0 12px 12px rgba(255,255,255,.3);  
+      }
+ }
+.star:nth-child(2n+1){
+    -moz-animation:star-impar 2s infinite;
+    }
+    @keyframes star-impar{
+       0%,35%,50%{
+          box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+       }
+        45%{
+          box-shadow: 0 0 12px 12px rgba(255,255,255,.3);  
+       }
+ }
+ 
+ 
+ .navbar {
+	background: #EE6E73; 
+	left:0px;
+	bottom:0px;
+	height:50px;
+	width:100%;
+
+}
+
+/*STYLES ABOUT ME*/
+#profilephoto{
+    margin-top: 1%;
+	width: 50%;
+	height: 90%;
+	border-radius: 10%;
+
+}
+#about h5{
+	text-align: justify;
+	color:#212F3C;
+	font-family: 'Roboto', sans-serif; 	
+}
+ h3{
+     text-align: center
+ }
+
+ /*STYLES SECTION PROJECTS*/
+#projects{
+	display:block;
+	
+}
+.card{
+	width: 32%!important;
+	margin-right:10px;	
+}
+
+.card-image img{
+	width:100% !important;
+	height:300px;	
+}
+
+.card-action a{
+	color:#EE6E73 !important;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif; 
+}
+
+.card-reveal{
+	background-color:#EE6E73 !important;
+	color:white;	
+	font-family: 'Roboto', sans-serif;	
+}
+
+.card-reveal span{
+	margin-bottom:10px;
+	
+}
+
+.card-title {
+	font-weight:bold!important;
+}
+
+.card-reveal p{
+	margin-top:10px;
+}
+
+.card-title{
+	color:white;
+	font-family: 'Roboto', sans-serif; 
+	font-weight: bold;
+}
+ 
+	
+
+    /*STYLE SKILLS*/
+
+#skills article {
+	height:300px;
+}
+#skills article img{
+	padding: 10px;
+	display:block;
+	margin:auto;
+	width: 90px;
+	height:90px;
+}
+
+.skillimagelarge{
+	width: 100px!important;	
+}
+
+#skills article h5{
+	text-align: center;
+	color:#212F3C;	
+}
+
+#skills article h6{
+	text-align: center;
+	color:#212F3C;	
+	font-family: 'Roboto', sans-serif; 	
+	margin-bottom: 50px;
+}
+
+/*STYLES SECTION CONTACT*/
+
+#contact{	
+	background: hsla(260,40%,5%,1);	
+	height:100vh;
+	margin-bottom: 0px;
+}
+
+#contact h3{
+	padding:40px 0px;
+	text-align: center;
+	color:white;
+	font-weight: bold;
+	margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+#contact h5{
+	padding-top:20px;
+	text-align: center;
+	color:white;
+	font-family: 'Roboto', sans-serif; 
+}
+
+#contactflex{
+	display:flex;
+	flex-direction:row;
+}
+
+#linkedin{		
+	text-align: right;	
+}
+
+#github{	
+	text-align: left;	
+}
+
+#contactflex a img{
+	margin-top:20px;
+	width: 12%;
+	margin-left:10px;
+	margin-right:10px;
+}  
+
+#cv{
+	width: 7%;	
+	display:block;
+	margin:auto;
+	text-align: center;
+}
+
+footer{
+	background-color:#EE6E73;
+	height:100%
+}
+
+footer h6{
+	margin:0px;
+	padding: 10px 100px;
+	color:white;
+	text-align:center;
+}
+
+/*RESPONSIVO PORTRAIT*/ 
+@media screen and (max-width: 992px) and (orientation: portrait){
+
+	.content {
+		height: 100vh;
+		justify-content: center;
+	}
+
+	.content_title{
+		top:30%;
+	}
+	.content_title h2{		
+		font-size: 92px;
+		line-height: 1.5;
+	}
+
+	#btnabout{
+		width: 500px;
+		height: 120px;
+		margin: 30px 100px;		      
+		font-size: 48px; 	
+		cursor: none;
+	}
+
+	nav i.material-icons{
+        font-size:100px;
+        margin-top: 65px;
+	}
+	
+	.sidenav{
+        width: 700px;
+    }
+    .sidenav li a{
+        font-size:40px;
+        margin-top:50px;     
+	}
+	
+	nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+		height: 150px;
+		line-height: 40px;
+	}
+
+	ul:not(.browser-default) {
+		z-index:20000;
+	}
+
+	#about, #skills, #projects, #contact{
+		padding: 60px 80px;					
+	}
+	/*PROJECTS*/
+	.card{
+		width: 100%!important;
+		height:80%;
+		margin-bottom:50px;	
+	}
+
+	.card-image img{
+		width:100% !important;
+		height:800px;
+	}
+	.card-action a{
+		color:#EE6E73 !important;
+		font-size:42px;
+		font-weight: bold;
+
+	}
+
+	.card .card-content .card-title {
+		font-size: 52px;
+		font-weight: bold;
+	}
+
+	.material-icons {
+        font-size:60px;
+	}
+
+	.card-reveal{
+		font-size:42px;		
+		font-weight: normal!important;
+	}
+	
+	.card-title{		
+		font-size:52px!important;
+	}
+	/*ABOUT ME*/
+	#about h3, #skills h3, #projects h3 {
+		font-size: 82px;
+	}
+
+	#profilephoto{
+		width: 80%;
+		height: 80%;
+		display:block;
+		margin:auto;
+	}
+
+	#about h5{
+		font-size:56px;		
+		margin-top:10px;
+	}
+
+	#about article{
+		margin-top: 20px;
+	}
+
+	/*SKILLS*/
+	#skills article {
+		height:600px;
+	}
+
+	#skills article h5{
+		font-size:42px;
+		font-weight: bold;		
+	}
+
+	#skills article h6{
+		font-size:32px;	
+	}
+
+	#skills article img{		
+		width: 150px;
+		height:150px;
+	}
+
+	.skillimagelarge{
+		width: 170px!important;		
+	}
+	/*CONTACT*/
+
+	#contact h3{
+		margin-top:200px;
+		font-size: 82px;
+	}
+	
+	#contact h5{
+		font-size:56px;
+		line-height: 1.5;
+		margin-top:60px;	
+	}
+	
+	#contactflex a img{
+		margin-top:50px;
+		width: 40%;
+		text-align:center;
+	}  
+
+	#linkedin, #github{		
+		text-align: center;	
+	}
+	
+	#cv{
+		margin-top:50px;
+		width: 25%;	
+	}
+
+}
+
+/*RESPONSIVO LANDSCAPE*/ 
+@media screen and (max-width: 992px) and (orientation: landscape){
+
+	.content--canvas {
+		height: 100vh;
+		justify-content: center;
+	}
+
+    .content_title{
+		top:30%;
+	}	
+
+	#btnabout{
+		width: 200px;
+		height: 60px;			      
+		font-size: 28px; 	
+		cursor: none;
+	}
+	
+	nav i.material-icons{
+        font-size:40px;
+        margin-top: 40px;
+	}
+	
+	.sidenav{
+        width: 300px;
+    }
+    .sidenav li a{
+        font-size:24px;
+        margin-top:20px;     
+	}
+	
+	nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+		height: 70px;
+		line-height: 0px;
+	}
+
+	ul:not(.browser-default) {
+		z-index:20000;
+	}
+
+	#about, #skills, #projects, #contact{
+		padding: 60px 80px;					
+	}
+	/*PROJECTS*/
+	.card{	
+		margin-bottom:50px;	
+	}
+
+	.card-image img{
+		width:100% !important;
+		height:300px;
+	}
+	.card-action a{		
+		font-size:20px!important;
+		font-weight: bold;
+	}	
+
+	.material-icons {
+		font-size:30px;
+		padding-left:10px;
+	}
+	.card-title{
+		font-size:20px!important;
+	}
+	.card-reveal{
+		font-size:22px!important;		
+		font-weight: normal!important;
+	}
+
+	.card-reveal p{
+		font-size:16px!important;
+	}
+	/*ABOUT ME*/
+	#about h3, #skills h3, #projects h3 {
+		font-size: 48px;
+	}
+
+	#profilephoto{
+		width: 70%;
+		height: 70%;
+		display:block;
+		margin:auto;
+	}
+
+	#about h5{
+		font-size:28px;		
+	}
+
+	/*SKILLS*/
+
+	#skills article{
+		height:350px;
+	}
+
+	#skills article h5{
+		font-size:32px;
+		font-weight: bold;		
+	}
+
+	#skills article h6{
+		font-size:22px;	
+	}
+
+	#skills article img{		
+		width: 100px;
+		height:100px;
+	}
+	
+	.skillimagelarge{
+		width: 120px!important;		
+	}
+	/*CONTACT*/
+
+	#contact h3{	
+		margin-top: 10px;	
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 48px;
+	}
+	
+	#contact h5{
+		margin-top: 0px;
+		font-size:28px;			
+	}
+	
+	#contactflex a img{		
+		width: 15%;
+		text-align:center;
+	}  
+
+	#linkedin, #github{		
+		text-align: center;	
+	}
+	
+	#cv{		
+		width: 10%;	
+	}
+		
+	footer h6 {
+		font-size:24px;
+		z-index:100;
+		
+	}	
+}
+
+
