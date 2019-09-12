@@ -115,7 +115,7 @@ hr {
 .profile-image img {
     width: 100px;
     height: 100px;
-    border: 3px solid white;
+    border: 1px solid white;
     -webkit-border-radius: 70px;
     border-radius: 50px;
     overflow: hidden;
@@ -124,8 +124,8 @@ hr {
   
 h3.profile-title {
   margin-bottom: 5px;
-  color:#c70e6a;
-  font-size: 18px;
+  color:#c50766;
+  font-size: 22px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -168,7 +168,7 @@ h3.profile-title {
   color: rgb(114, 113, 113);
 }
 .social-icons a:hover {
-  color: #282e35;
+  color: #c50766;;
 }
 
 .responsive-header {
@@ -351,7 +351,7 @@ h3.profile-title {
 }
 
 /*------ contact ------ */
-.contact-form {
+/* .contact-form {
   margin-top: 40px;
 }
 .contact-form input, .contact-form textarea {
@@ -371,7 +371,7 @@ h3.profile-title {
   color: white;
   text-transform: uppercase;
   border: 0;
-}
+} */
 
 /*-------------Footer----------------------- */
 #footer p.copyright-text {
