@@ -350,28 +350,6 @@ h3.profile-title {
   line-height: 23px;
 }
 
-/*------ contact ------ */
-/* .contact-form {
-  margin-top: 40px;
-}
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  outline: 0;
-  border: 1px solid #aaaaaa;
-  padding: 12px;
-  color: #999999;
-  margin-bottom: 30px;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-  outline: 0;
-}
-.contact-form .button {
-  width: auto;
-  background: #eaaaa0;
-  color: white;
-  text-transform: uppercase;
-  border: 0;
-} */
 
 /*-------------Footer----------------------- */
 #footer p.copyright-text {
