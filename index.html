@@ -1,240 +1,330 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+
+<html class="no-js">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <title>Betsi Salas</title>
-  <link rel="shortcut icon" href="img/LogoB12.png" type="image/x-icon" />
-  <!--Google Font Lato y Roboto-->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" />
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Portfolio de Betsi Salas</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <script src="https://kit.fontawesome.com/88192e9d96.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet"href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
 </head>
-<header>
-  <!--NAV PARA DESKTOP-->
-  <nav class="nav-wrapper">        
-    <a  data-target="mobile-demo" class="sidenav-trigger">
-    <i class="material-icons">menu</i>
-  </a>
-  <ul class="right hide-on-med-and-down"> 
-    <li><a class="href" href="#home">INICIO</a></li>
-    <li><a class="href" href="#projects">PROYECTOS</a></li>
-    <li><a class="href" href="#about">SOBRE MI</a></li>
-    <li><a class="href" href="#contact">CONTACTO</a></li>
-  </ul>     
-</nav>
 
-  <!--nav responsivo-->
-  <ul class="sidenav" id="mobile-demo" >        
-    <li><a href="#home">INICIO</a></li>
-    <li><a href="#projects">PROYECTOS</a></li>
-    <li><a href="#about">SOBRE MI</a></li>
-    <li><a href="#contact">CONTACTO</a></li>
-  </ul>
-
-</header>
-<!--CONTENIDO DINÁMICO-->
-<main id="dinamicpage">
-  <!--SECTION HOME-->
-  
-    <section id="home">
-      <div class="content content--canvas">
-      <div class="star one"></div>
-      <div class="star two"></div>
-      <div class="star three"></div>
-      <div class="star four"></div>
-      <div class="star five"></div>
-      <div class="star six"></div>
-      <div class="star seven"></div>
-      <div class="star eight"></div>
-      <div class="star nine"></div>
-      <div class="star ten"></div>
-   
-   <div class="content_title">
-      <h2>Hola, soy <span>Betsi Salas</span></h2>
-      <h2>Diseñadora Front-End Developer</h2>
-      <button id="btnabout">
-        <a href="#projects">Algunos de mis proyectos</a>
-      </button>
-   </div>
-  </section>
-</container-fluid>
-
-  <!--SECTION PROJECTS-->
-  <section id="projects" class="row">
-    <div class="containerproject">
-      <h3 class="aniview" data-av-animation="bounceInDown">PROYECTOS</h3>
-      <div class="card col s12 m6 l6 aniview" data-av-animation="fadeInUp">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="img/Data_lovers.png">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Pokemon Go<i
-              class="material-icons right">more_vert</i></span>
-        </div>
-        <div class="card-action">
-          <a href="https://carolinaolatev.github.io/SCL008-data-lovers/src/index.html" target="_blank">DEMO</a>
-          <a href="https://github.com/Betsi12/SCL008-data-lovers" target="_blank">CÓDIGO</a>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title text-darken-4"><i class="material-icons right">close</i>Pokemon Go</span>
-          <p>Trabajo colaborativo que agrupa información de los 151 Pokémons de la región de Kanto, permitiendo al usuario realizar diversos filtros.</p>
-          <p>Para su desarrollo, se hizo consumo de la Api de Pokémon y se desarrollo en Javascript usando el framewar Bootstrap.</p>
+<body>
+  <div class="responsive-header visible-xs visible-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-section">
+            <div class="profile-image">
+              <img src="img/Mi-foto.png" alt="Foto de perfil" />
+            </div>
+            <div class="profile-content">
+              <h3 class="profile-title">Betsi Alejandra Salas</h3>
+              <p class="profile-description">Front end Developer</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="containerproject">
-         <div class="card col s12 m6 l6 aniview" data-av-animation="fadeInUp">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/Burger-Queen.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Burger Queen<i
-                class="material-icons right">more_vert</i></span>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/Mariia1304/SCL009-Burger-Queen/tree/gh-pages" target="_blank">DEMO</a>
-            <a href="https://github.com/Betsi12/SCL009-Burger-Queen" target="_blank">CÓDIGO</a>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title text-darken-4"><i class="material-icons right">close</i>Burger Queen</span>
-            <p>Aplicación desarrollada para ser usada en Tablet, que permite a los trabajadores de esta cadena de comida almacenar los pedidos de los clientes.</p>
-            <p>Para su implementación, se usó la librería React, Bootstrap y Firebase para almacenar los pedidos realizados</p>
-          </div>
-        </div>
-        <div class="containerproject">
-          <div class="card col s12 m6 l6 aniview" data-av-animation="fadeInUp">
-           <div class="card-image waves-effect waves-block waves-light">
-             <img class="activator" src="img/md-links.png">
-           </div>
-           <div class="card-content">
-             <span class="card-title activator grey-text text-darken-4">Md-links<i
-                 class="material-icons right">more_vert</i></span>
-           </div>
-           <div class="card-action">
-             <a href="https://github.com/Betsi12/SCL009-md-links" target="_blank">CÓDIGO</a>
-           </div>
-           <div class="card-reveal">
-             <span class="card-title text-darken-4"><i class="material-icons right">close</i>Md-links</span>
-             <p>Librería para extraer los enlaces de directorios y/o archivos markdown (.md), validar su status y obtener estadísticas de acuerdo a los enlaces encontrados.</p>
-             <p>Fue desarrollada usando Node.js</p>
-           </div>
-         </div>
-  </section>;
-
-  <!--SECTION ABOUT-->
-  <section id="about" class="row">
-    <h3 id="title" class="aniview" data-av-animation="slideInLeft">SOBRE MI</h3>
-    <picture class="col s12 m12 l4">
-      <img class="aniview" data-av-animation="pulse" src="img/Mi-foto.jpg" id="profilephoto" alt="Foto de perfil" />
-    </picture>
-    <article class="col s12 m12 l8 aniview" data-av-animation="fadeInUp">
-      <h5>Soy Front-End Developer y Profesora de Informática </h5>
-      <h5> Amante de la tecnología.  Técnico Superior Universitario en Informática,
-           con conocimiento en diseño FrontEnd de aplicaciones web, metodologías ágiles.
-           Enfocada en ir de la mano con las nuevas tendencias tecnológicas. 
-           Comprometida con lo que hago. Más de 8 años de experiencia como profesora de informática. </h5>
-    </article>
-  </section>
-
-<section id="skills" class="row">
-    <h3 class="aniview" data-av-animation="bounceInDown">HABILIDADES TÉCNICAS</h3>
-      <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-          <img src="img/html5.png" class="skillimage" alt="Logo html5" />
-          <h5>HTML 5</h5>
-      </article>
-
-      <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-        <img src="img/css.png" class="skillimage" alt="Logo css3" />
-        <h5>CSS 3</h5>
-      </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/js.png" class="skillimage" alt="Logo Javascript" />
-      <h5>JAVASCRIPT</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/github.png" class="skillimage" alt="Logo Github" />
-      <h5>GITHUB</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/git.png" class="skillimage" alt="Logo Git" />
-      <h5>GIT</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/react.png" class="skillimage1" alt="Logo react" />
-      <h5>REACT JS</h5>
-    </article>
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/nodejs.png" class="skillimage" alt="Logo nodejs" />
-      <h5>NODE JS</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/npm.png" class="skillimagelarge" alt="Logo npm" />
-      <h5>NPM</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/firebase.png" class="skillimage" alt="Logo firebase" />
-      <h5>FIREBASE</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/jquery.png" class="skillimage" alt="Logo jquery" />
-      <h5>JQUERY</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/bootstrap.png" class="skillimage" alt="Logo bootstrap" />
-      <h5>BOOTSTRAP</h5>
-    </article>
-
-    <article class="col s6 m4 l2 aniview" data-av-animation="fadeInLeftBig">
-      <img src="img/materialize.png" class="skillimagelarge" alt="Logo materialize" />
-      <h5>MATERIALIZE</h5>
-    </article>
-</section>
-
-<!--SECTION CONTACT-->
-<section  id="contact" class="row">
-  <h3 class="aniview" data-av-animation="bounceIn" >CONTACTO</h3>
-  <article class="aniview" data-av-animation="fadeIn">
-      <h5>¿Quieres contactarme?</h5>
-      <div id="contactflex">
-        <a id="linkedin" title="Linkedin" href="https://www.linkedin.com/in/betsi-alejandra-salas-vásquez-" target="_blank"><img class="aniview" data-av-animation="flipInX" src="img/linkedin-contact.png" alt="url linkedin" /></a>
-        <a id="github" title="Github" href="https://github.com/Betsi12" target="_blank"><img class="aniview" data-av-animation="flipInX" src="img/github.png" alt="url github" /></a>
+      <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+      <div class="main-navigation responsive-menu">
+        <ul class="navigation">
+          <li>
+            <a href="#top"><i class="fa fa-home"></i>Inicio</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa fa-user"></i>Sobre mi</a>
+          </li>
+          <li>
+            <a href="#projects"><i class="fa fa-newspaper-o"></i>Proyectos</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-envelope"></i>Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <h5>Descarga mi CV</h5>
-				<a title="CV" href="https://drive.google.com/open?id=1oPI430FO_gYl2RKSTGX8k-mVyB9qWB2t" target="_blank"><img id="cv" class="aniview" data-av-animation="flipInY" src="img/download-contact.png" alt="url linkedin" /></a> 
-
-  </article>                   
-</section>
-</main>
-<!--FOOTER-->
-<footer>
-    <h6> Desarrollado por Betsi Salas    2.019</h6> 
-</footer> 
-
-<!--CDN JQuery-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!--Traslation JS y JQuery-->
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/jquery-aniview@1.0.1/dist/jquery.aniview.js"integrity="sha384-zDA6q/t525x7f6KD/OaOe24vCxSPU3eraILc2NU+ZA7ISsc3ExQbj8PB56FRMq6H"
-crossorigin="anonymous"></script>
-<script src="index.js"></script> 
-   
+  </div>
  
+<!-- SIDEBAR -->
+<div class="sidebar-menu hidden-xs hidden-sm">
+  <div class="top-section">
+    <div class="profile-image">
+      <img src="img/Mi-foto.png" alt="Foto de Perfil"/>
+    </div>
+    <h3 class="profile-title">Betsi Alejandra Salas</h3>
+    <p class="profile-description">Front end Developer</p>
+  </div>
+  <!-- top-section -->
+  <div class="main-navigation">
+    <ul class="navigation">
+      <li>
+        <a href="#top"><i class="fa fa-globe"></i>Inicio</a>
+      </li>
+      <li>
+        <a href="#about"><i class="fa fa-pencil"></i>Sobre mi</a>
+      </li>
+      <li>
+        <a href="#projects"><i class="fa fa-paperclip"></i>Proyectos</a>
+      </li>
+      <li>
+        <a href="#contact"><i class="fa fa-link"></i>Contacto</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .main-navigation -->
+</div>
 
-</body>
+<!-- .sidebar-menu -->
+<div class="banner-bg" id="top">
+  <div class="banner-overlay"></div>
+  <div class="welcome-text">
+    <h2>Bienvenido a mi Portafolio</h2>
+    <h5>Gracias por visitar mi sitio web!</h5>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <div class="fluid-container">
+    <div class="content-wrapper">
+      <!-- ABOUT -->
+      <div class="page-section" id="about">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="widget-title"><strong>Sobre mi</strong></h4>
+            <div class="row">
+              <div class="col-lg-6 ml-auto">
+                <p>
+                  Soy una Jr. Front-end developer en constante aprendizaje.Tengo título de Técnico Superior Universitario en Informática
+                  y Profesora en la misma área con más de 16 años de experiencia laboral.
+                  Me apasiona la construcción de aplicaciones web, preferiblemente implementando  metodologías ágiles. 
+                  Tengo una curiosidad innata por  aprender y me encanta enseñar.
+                  Me considero una persona adaptable, sociable y empática; me gusta trabajar en equipos por lo que he logrado adquirir 
+                  una comunicación asertiva y respetuosa. 
+                </p>
+              </div>
+              <div class="col-lg-6 mr-auto">
+                <p>
+                  Estoy aquí por la oportunidad de aprender más sobre diseño web 
+                  y contribuir con mi visión creativa y análitica en este campo. 
+                  En el futuro deseo ser una excelente desarrolladora y trabajar como diseñadora UAI que es la parte más entretenida para mi.
+                  En mi tiempo libre me gusta escuchar música, amo estar en familia, viajar y compartir las cosas simples de la vida.
+                </p>
+              </div>
+            </div>
+            <br/><br />
+            
+            <div class="wrapper">
+              <h4 class="widget-title"><strong>TECH SKILLS</strong></h4>
+              <div class="skill">
+              <!--js-->
+                <center><p>
+                      <img src="https://img.icons8.com/color/48/000000/javascript.png" />&nbsp; &nbsp; &nbsp;
+                      <img src="https://img.icons8.com/color/48/000000/html-5.png" />&nbsp; &nbsp; &nbsp;
+                      <img src="https://img.icons8.com/color/48/000000/css3.png" />&nbsp; &nbsp; &nbsp;
+                      <img src="https://img.icons8.com/color/48/000000/firebase.png" />
+                      &nbsp; &nbsp; &nbsp;
+                      <img src="https://img.icons8.com/ios-glyphs/48/000000/react.png" />&nbsp; &nbsp; &nbsp;<img
+                        src="https://img.icons8.com/color/48/000000/nodejs.png" />&nbsp; &nbsp; &nbsp;
+                      <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />&nbsp; &nbsp; &nbsp;<img
+                        src="https://img.icons8.com/color/48/000000/npm.png" />&nbsp; &nbsp; &nbsp;
+                      <img src="https://img.icons8.com/color/48/000000/git.png" />&nbsp; &nbsp; &nbsp;<img
+                        src="https://img.icons8.com/material-sharp/48/000000/github.png" />
+                </p></center>
+                <div class="skill-bar skill1 wow slideInLeft animated"></div>
+              </div>
+              <br /><br />
+                  <div class="wrapper">
+                    <h4 class="widget-title"><strong>SOFT SKILLS</strong></h4>
+                    <div class="col-lg-6 ml-auto">
+                      <li>Adaptabilidad</li>
+                      <li>Auto aprendizaje</li>
+                      <li>Trabajo colaborativo</li>
+                    </div>
+                    <div class="col-lg-6 mr-auto">
+                      <li>Feedback efectivo</li>
+                      <li>Mejora continua</li>
+                      <li>Reponsabilidad</li>
+                    </div>
+                  </div>
+                </div>
+                <!-- fin de coloumna -->
+              <br /><br />
+              <br /><br />
+              <br /><br />
+              <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light"
+                  href="https://drive.google.com/open?id=1oPI430FO_gYl2RKSTGX8k-mVyB9qWB2t"target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-download"></i>
+                  Descarga mi CV!
+                </a>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <!-- #about -->
+        </div>
+
+         <!-- PROJECTS -->
+         <div class="page-section" id="projects">
+          <div class="row">
+            <div class="col-md-30">
+              <h4 class="widget-title"> <strong>Proyectos</strong></h4>
+              <p>
+                Algunos de mis trabajos
+              </p>
+            </div>
+          </div>
+
+            <div class="col-md-6.5 col-sm-6">
+                <div class="project-item">
+                  <img src="img/1.jpg" alt="" />
+                  <div class="project-hover">
+                    <div class="inside">
+                      <h5><a>Pokemón Go!</a> <br><br> <a
+                        href="https://carolinaolatev.github.io/SCL008-data-lovers/src/index.html" target="blank">
+                        <center><strong> <i class="far fa-hand-pointer"></i> Demo &nbsp &nbsp <i
+                              class="fab fa-github"></i>
+                      </a> <a href="https://github.com/Betsi12/SCL008-data-lovers" target="blank">Código</strong>
+                      </a></center></a></h5>
+                    <p>
+                        Trabajo colaborativo que agrupa información de los 151 Pokémons de la región de Kanto, 
+                        permitiendo  al usuario realizar diversos filtros.Para su desarrollo, se hizo consumo de 
+                        la Api de Pokémon.
+                      <br><br>
+                      <strong> Tecnologías usadas:</strong> HTML5, CSS3, API & JavaScript ES6.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <div class="col-md-6.5 col-sm-6">
+                    <div class="project-item">
+                      <img src="img/2.jpg" alt="" />
+                      <div class="project-hover">
+                        <div class="inside">
+                          <h5><a>Sala red</a> <br><br> <a
+                              href="https://cloiw.github.io/SCL009-Social-Network/src/index.html" target="blank">
+                              <center><strong> <i class="far fa-hand-pointer"></i> Demo &nbsp &nbsp <i
+                                    class="fab fa-github"></i>
+                            </a> <a href="https://github.com/Betsi12/SCL009-Social-Network" target="blank">Código</strong>
+                            </a></center></a></h5>
+                          <p>
+                            Red social para amantes del teatro. Donde pueden publicar y eliminar post, además de dar like 
+                            y quitar likes de las publicaciones. 
+                            <br><br>
+                            <strong> Tecnologías usadas:</strong> HTML5, CSS3, JavaScript ES6 & Firebase.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-6.5 col-sm-6">
+                    <div class="project-item">
+                      <center> <img src="img/3.png" alt="" id="md" /></center>
+                      <div class="project-hover">
+                        <div class="inside">
+                          <h5><a>Md Links</Link></a><br><br> <a href="https://www.npmjs.com/package/betsi12-md-links" target="blank"
+                              target="_blank">
+                              <center><strong> <i class="far fa-hand-pointer"></i>
+                            </a> <a href="https://github.com/Betsi12/SCL009-md-links"  target="_blank"> npm &nbsp &nbsp <i
+                                class="fab fa-github"></i> Código</strong>
+                            </a></center></a></h5>
+                          <p>
+                            Librería creada para extraer los enlaces de directorios y/o archivos markdown (.md), 
+                            validar su status y obtener estadísticas de acuerdo a los enlaces encontrados.
+                            <br><br>
+                            <strong>Tecnologías usadas:</strong> Node.js, & JavaScript ES6.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6.5 col-sm-6">
+                      <div class="project-item">
+                        <center> <img src="img/3.png" alt="" id="md" /></center>
+                        <div class="project-hover">
+                          <div class="inside">
+                            <h5><a>Md Links</Link></a><br><br> <a href="https://www.npmjs.com/package/betsi12-md-links" target="blank"
+                                target="_blank">
+                                <center><strong> <i class="far fa-hand-pointer"></i>
+                              </a> <a href="https://github.com/Betsi12/SCL009-md-links"  target="_blank"> npm &nbsp &nbsp <i
+                                  class="fab fa-github"></i> Código</strong>
+                              </a></center></a></h5>
+                            <p>
+                              Librería creada para extraer los enlaces de directorios y/o archivos markdown (.md), 
+                              validar su status y obtener estadísticas de acuerdo a los enlaces encontrados.
+                              <br><br>
+                              <strong>Tecnologías usadas:</strong> Node.js, & JavaScript ES6.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <!-- .projects -->
+              </div>
+              <br>
+              <hr />
+              <!-- contact-section -->
+              <hr />
+              <div class="row" id="contact">
+              <div class="col-md-12 text-center">
+              <div class="social-icons">
+                  <p class="copyright-text">
+                      Contacto
+                  </p>
+                <ul>
+                  <li>
+                    <a href="https://www.linkedin.com/in/betsi-alejandra-salas-vásquez-" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin fa-3x"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Betsi12" target="_blank"><i class="fab fa-github fa-3x" rel="noopener noreferrer"></i></a>
+                  </li>
+                  <li>
+                    <a href="mailto:betsi.salas12@gmail.com" target="_blank"
+                      rel="noopener noreferrer"><i class="fa fa-envelope fa-3x"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              
+                  <p class="copyright-text">
+                    Copyright &copy; 2019 Betsi Alejandra Salas
+                  </p>
+                </div>
+              </div>
+    </div>
+ </div>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+ 
